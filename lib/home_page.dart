@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => AllProduct()));
                 },
-                child: Text("All Product")),
+                child: Text("All Products")),
 
                 ElevatedButton(
                 onPressed: () {
