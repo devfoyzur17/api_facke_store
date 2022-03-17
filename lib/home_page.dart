@@ -21,21 +21,30 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Product"),
+        backgroundColor: Color(0xff009900),
+        
+        title: Center(child: Text("Enjoy your shopping")),
       ),
       body: Container(
+        padding: EdgeInsets.symmetric(horizontal: 5),
         child: ListView(
           children: [
             // ignore: prefer_const_constructors
 
-            ElevatedButton(
+            Image.asset("assets/img.png"),
+
+            RaisedButton(
+              color: Color(0xff4dff4d),
+              textColor: Color(0xff001a00),
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => AllProduct()));
                 },
                 child: Text("All Products")),
 
-                ElevatedButton(
+                RaisedButton(
+                   color: Color(0xff1aff1a),
+                   textColor: Color(0xff001a00),
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => SingleProduct()));
@@ -43,21 +52,27 @@ class _HomePageState extends State<HomePage> {
                 child: Text("Single Product")),
 
 
-                 ElevatedButton(
+                 RaisedButton(
+                    color: Color(0xff00e600),
+                   textColor: Color(0xff001a00),
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => ProductCategory()));
                 },
                 child: Text("Product Category")),
 
-                ElevatedButton(
+                RaisedButton(
+                  color: Color(0xff00cc00),
+                   textColor: Color(0xff001a00),
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => Juyelery()));
                 },
                 child: Text("Juyelery")),
 
-                ElevatedButton(
+                RaisedButton(
+                  color: Color(0xff00b300),
+              textColor: Color(0xff001a00),
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => LimitProduct()));
